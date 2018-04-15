@@ -1,0 +1,13 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: GitHub
+      external_url: https://github.com/tomjoht/documentation-theme-jekyll
+    - title: Forum
+      external_url: https://forum.dropsource.com
+    - title: Log In
+      external_url: https://app.dropsource.com/login
+    - title: Sign Up
+      external_url: https://app.dropsource.com/signup?utm_source=help-center&utm_medium=link

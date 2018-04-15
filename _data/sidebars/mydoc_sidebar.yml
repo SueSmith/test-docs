@@ -1,0 +1,50 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Dropsource Help Center
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Getting Started
+    output: web, pdf
+    folderitems:
+
+    - title: Welcome
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Assessing your Use Case
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Preparing your Data
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+  - title: Learning Dropsource
+    output: web, pdf
+    folderitems:
+
+  - title: Building your Project
+    output: web, pdf
+
+  - title: Integrations
+    output: web, pdf
+
+  - title: Release Notes
+    output: web, pdf
+    folderitems:
