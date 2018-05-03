@@ -1,4 +1,4 @@
-repository: tomjoht/documentation-theme-jekyll
+repository: SueSmith/test-docs
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -109,3 +109,10 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # needed for sitemap.xml file only
 url: SueSmith.github.io
 baseurl: /test-docs
+
+algolia:
+  application_id: DXSRSENK55
+  index_name:     jekyll # You can replace that with whatever name you want
+  search_only_api_key: b680d088416c8369f22bb626c6b93e5b
+  nodes_to_index: 'p,blockquote,li,div,h1,h2,h3'
+  files_to_exclude: []

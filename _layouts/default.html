@@ -87,9 +87,50 @@
             </div>
             {% assign content_col_size = "col-md-9" %}
         {% endunless %}
-
         <!-- Content Column -->
+        
         <div class="{{content_col_size}}" id="tg-sb-content">
+        
+  
+        
+        
+        
+                
+                <!--algolia-->
+
+<div class="algolia-home">
+
+<!--  <h1 class="page-heading">Search</h1>-->
+
+  <div id="search-searchbar"></div>
+
+  <div class="post-list" id="search-hits">
+    {% for post in site.posts %}
+      <div class="post-item">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
+
+        <div class="post-snippet">{{ post.excerpt }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% include algolia.html %}
+
+
+</div>
+
+<!--END algolia-->
+                
+        
+        
+        
             {{content}}
         </div>
     <!-- /.row -->
@@ -98,7 +139,6 @@
 </div>
 <!-- /#main -->
     </div>
-
 </body>
 {% if site.google_analytics %}
 {% include google_analytics.html %}

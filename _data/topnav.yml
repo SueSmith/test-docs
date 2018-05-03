@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
+      external_url: https://github.com/SueSmith/test-docs
     - title: Forum
       external_url: https://forum.dropsource.com
     - title: Log In
